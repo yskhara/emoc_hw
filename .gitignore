@@ -1,0 +1,3 @@
+*.kicad_pck-bak
+*.sch-bak
+fp-info-cache
