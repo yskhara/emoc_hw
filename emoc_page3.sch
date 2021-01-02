@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 4 5
 Title ""
 Date ""
 Rev ""
@@ -21,9 +21,9 @@ Wire Wire Line
 	5000 3050 5000 3100
 Wire Wire Line
 	7000 3050 7000 3100
-Text GLabel 2600 2850 0    50   Input ~ 0
+Text GLabel 2100 2850 0    50   Input ~ 0
 GH_A
-Text GLabel 2600 3450 0    50   Input ~ 0
+Text GLabel 2100 3450 0    50   Input ~ 0
 GL_A
 Text GLabel 4600 2850 0    50   Input ~ 0
 GH_B
@@ -33,14 +33,12 @@ Text GLabel 6600 2850 0    50   Input ~ 0
 GH_C
 Text GLabel 6600 3450 0    50   Input ~ 0
 GL_C
-Text GLabel 2600 3100 0    50   Output ~ 0
+Text GLabel 2100 3100 0    50   Output ~ 0
 SH_A
 Text GLabel 4600 3100 0    50   Output ~ 0
 SH_B
 Text GLabel 6600 3100 0    50   Output ~ 0
 SH_C
-Wire Wire Line
-	2600 3100 3000 3100
 Connection ~ 3000 3100
 Wire Wire Line
 	4600 3100 5000 3100
@@ -51,17 +49,15 @@ Connection ~ 7000 3100
 Wire Wire Line
 	7000 3100 7000 3200
 Wire Wire Line
-	2600 3450 2700 3450
+	2100 3450 2450 3450
 Wire Wire Line
-	2600 2850 2700 2850
+	4600 2850 4650 2850
 Wire Wire Line
-	4600 2850 4700 2850
+	4700 3450 4650 3450
 Wire Wire Line
-	4700 3450 4600 3450
+	6600 3450 6650 3450
 Wire Wire Line
-	6600 3450 6700 3450
-Wire Wire Line
-	6700 2850 6600 2850
+	6700 2850 6650 2850
 Wire Wire Line
 	7000 2650 7000 2600
 Wire Wire Line
@@ -119,7 +115,7 @@ F 1 "R_Shunt_US" H 4912 4095 50  0000 R CNN
 F 2 "libysk_Resistor:R_Shunt_2512" V 4930 4050 50  0001 C CNN
 F 3 "~" H 5000 4050 50  0001 C CNN
 	1    5000 4050
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R_Shunt_US R3
@@ -795,4 +791,110 @@ F 3 "https://www.onsemi.com/pub/Collateral/NVMFS5C604NL-D.PDF" H 4900 3450 50  0
 	1    4900 3450
 	1    0    0    -1  
 $EndComp
+Text Label 5100 3800 0    50   ~ 0
+SL_B
+Text Label 3100 3800 0    50   ~ 0
+SL_A
+Text Label 7100 3800 0    50   ~ 0
+SL_C
+Wire Wire Line
+	2100 2850 2450 2850
+$Comp
+L Connector:TestPoint TP1
+U 1 1 601B24F5
+P 2450 2800
+F 0 "TP1" H 2508 2918 50  0000 L CNN
+F 1 "TestPoint" H 2508 2827 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2650 2800 50  0001 C CNN
+F 3 "~" H 2650 2800 50  0001 C CNN
+	1    2450 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2800 2450 2850
+Connection ~ 2450 2850
+Wire Wire Line
+	2450 2850 2700 2850
+$Comp
+L Connector:TestPoint TP2
+U 1 1 601BB518
+P 2450 3400
+F 0 "TP2" H 2508 3518 50  0000 L CNN
+F 1 "TestPoint" H 2508 3427 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2650 3400 50  0001 C CNN
+F 3 "~" H 2650 3400 50  0001 C CNN
+	1    2450 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3400 2450 3450
+Connection ~ 2450 3450
+Wire Wire Line
+	2450 3450 2700 3450
+Wire Wire Line
+	2100 3100 3000 3100
+$Comp
+L Connector:TestPoint TP3
+U 1 1 60208682
+P 4650 2800
+F 0 "TP3" H 4708 2918 50  0000 L CNN
+F 1 "TestPoint" H 4708 2827 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4850 2800 50  0001 C CNN
+F 3 "~" H 4850 2800 50  0001 C CNN
+	1    4650 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 60208A1D
+P 4650 3400
+F 0 "TP4" H 4708 3518 50  0000 L CNN
+F 1 "TestPoint" H 4708 3427 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4850 3400 50  0001 C CNN
+F 3 "~" H 4850 3400 50  0001 C CNN
+	1    4650 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 60208D14
+P 6650 2800
+F 0 "TP5" H 6708 2918 50  0000 L CNN
+F 1 "TestPoint" H 6708 2827 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6850 2800 50  0001 C CNN
+F 3 "~" H 6850 2800 50  0001 C CNN
+	1    6650 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 60208FB1
+P 6650 3400
+F 0 "TP6" H 6708 3518 50  0000 L CNN
+F 1 "TestPoint" H 6708 3427 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6850 3400 50  0001 C CNN
+F 3 "~" H 6850 3400 50  0001 C CNN
+	1    6650 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 3400 6650 3450
+Connection ~ 6650 3450
+Wire Wire Line
+	6650 3450 6700 3450
+Wire Wire Line
+	6650 2800 6650 2850
+Connection ~ 6650 2850
+Wire Wire Line
+	6650 2850 6600 2850
+Wire Wire Line
+	4650 2800 4650 2850
+Connection ~ 4650 2850
+Wire Wire Line
+	4650 2850 4700 2850
+Wire Wire Line
+	4650 3400 4650 3450
+Connection ~ 4650 3450
+Wire Wire Line
+	4650 3450 4600 3450
 $EndSCHEMATC
