@@ -311,4 +311,10 @@ Text GLabel 4550 4150 2    50   Output ~ 0
 MOSI
 Wire Wire Line
 	4350 4150 4550 4150
+Wire Wire Line
+	4350 3450 4550 3450
+Wire Wire Line
+	3050 3550 2850 3550
+Wire Wire Line
+	3050 3650 2850 3650
 $EndSCHEMATC
